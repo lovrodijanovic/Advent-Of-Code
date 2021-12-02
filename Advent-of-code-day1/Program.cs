@@ -16,7 +16,7 @@ namespace Advent_of_code_d1_1
             int counter = 0;
             List<int> numbers = new List<int>();
             // Read the file and display it line by line.  
-            foreach (string line in System.IO.File.ReadLines(@"C:\Users\Loc\Desktop\Advent of Code\Advent-of-code-day1\input.txt"))
+            foreach (string line in System.IO.File.ReadLines(@"D:\Advent of Code\Advent-of-code-day1\input.txt"))
             {
                 int number = int.Parse(line);
                 numbers.Add(number);

@@ -1,0 +1,13 @@
+D:\Advent of Code\Advent-of-code-day2\bin\Debug\netcoreapp3.1\Advent-of-code-day2.exe
+D:\Advent of Code\Advent-of-code-day2\bin\Debug\netcoreapp3.1\Advent-of-code-day2.deps.json
+D:\Advent of Code\Advent-of-code-day2\bin\Debug\netcoreapp3.1\Advent-of-code-day2.runtimeconfig.json
+D:\Advent of Code\Advent-of-code-day2\bin\Debug\netcoreapp3.1\Advent-of-code-day2.runtimeconfig.dev.json
+D:\Advent of Code\Advent-of-code-day2\bin\Debug\netcoreapp3.1\Advent-of-code-day2.dll
+D:\Advent of Code\Advent-of-code-day2\bin\Debug\netcoreapp3.1\Advent-of-code-day2.pdb
+D:\Advent of Code\Advent-of-code-day2\obj\Debug\netcoreapp3.1\Advent-of-code-day2.csprojAssemblyReference.cache
+D:\Advent of Code\Advent-of-code-day2\obj\Debug\netcoreapp3.1\Advent-of-code-day2.csproj.CoreCompileInputs.cache
+D:\Advent of Code\Advent-of-code-day2\obj\Debug\netcoreapp3.1\Advent-of-code-day2.AssemblyInfoInputs.cache
+D:\Advent of Code\Advent-of-code-day2\obj\Debug\netcoreapp3.1\Advent-of-code-day2.AssemblyInfo.cs
+D:\Advent of Code\Advent-of-code-day2\obj\Debug\netcoreapp3.1\Advent-of-code-day2.dll
+D:\Advent of Code\Advent-of-code-day2\obj\Debug\netcoreapp3.1\Advent-of-code-day2.pdb
+D:\Advent of Code\Advent-of-code-day2\obj\Debug\netcoreapp3.1\Advent-of-code-day2.genruntimeconfig.cache
