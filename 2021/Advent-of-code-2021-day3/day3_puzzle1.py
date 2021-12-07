@@ -8,6 +8,7 @@ Created on Mon Dec  6 16:06:53 2021
 lines = []
 with open('input.txt') as f:
     lines = f.readlines()
+f.close()
 
 final_list = []
 
@@ -23,7 +24,7 @@ for j in range(0,12):
         final_list.append('0')
     else:
         final_list.append('1')
-f.close()
+
 
 final_gama = ''.join(final_list)
 gama = int(final_gama,2)
