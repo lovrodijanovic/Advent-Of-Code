@@ -1,0 +1,13 @@
+D:\Advent of Code\2020\Advent-of-code-2020-day1\bin\Debug\netcoreapp3.1\Advent-of-code-2020-day1.exe
+D:\Advent of Code\2020\Advent-of-code-2020-day1\bin\Debug\netcoreapp3.1\Advent-of-code-2020-day1.deps.json
+D:\Advent of Code\2020\Advent-of-code-2020-day1\bin\Debug\netcoreapp3.1\Advent-of-code-2020-day1.runtimeconfig.json
+D:\Advent of Code\2020\Advent-of-code-2020-day1\bin\Debug\netcoreapp3.1\Advent-of-code-2020-day1.runtimeconfig.dev.json
+D:\Advent of Code\2020\Advent-of-code-2020-day1\bin\Debug\netcoreapp3.1\Advent-of-code-2020-day1.dll
+D:\Advent of Code\2020\Advent-of-code-2020-day1\bin\Debug\netcoreapp3.1\Advent-of-code-2020-day1.pdb
+D:\Advent of Code\2020\Advent-of-code-2020-day1\obj\Debug\netcoreapp3.1\Advent-of-code-2020-day1.csprojAssemblyReference.cache
+D:\Advent of Code\2020\Advent-of-code-2020-day1\obj\Debug\netcoreapp3.1\Advent-of-code-2020-day1.csproj.CoreCompileInputs.cache
+D:\Advent of Code\2020\Advent-of-code-2020-day1\obj\Debug\netcoreapp3.1\Advent-of-code-2020-day1.AssemblyInfoInputs.cache
+D:\Advent of Code\2020\Advent-of-code-2020-day1\obj\Debug\netcoreapp3.1\Advent-of-code-2020-day1.AssemblyInfo.cs
+D:\Advent of Code\2020\Advent-of-code-2020-day1\obj\Debug\netcoreapp3.1\Advent-of-code-2020-day1.dll
+D:\Advent of Code\2020\Advent-of-code-2020-day1\obj\Debug\netcoreapp3.1\Advent-of-code-2020-day1.pdb
+D:\Advent of Code\2020\Advent-of-code-2020-day1\obj\Debug\netcoreapp3.1\Advent-of-code-2020-day1.genruntimeconfig.cache
