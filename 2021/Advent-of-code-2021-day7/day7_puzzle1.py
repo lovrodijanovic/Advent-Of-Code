@@ -18,12 +18,7 @@ fuelSum = 0
 for i in range(0,2000):
     fuelSum = 0
     for j in range(len(values)):
-        if(int(values[j]) > i):
-            fuelSum += int(values[j]) - i
-        elif(int(values[j]) < i):
-            fuelSum += i - int(values[j])
-        else:
-            fuelSum += 0
+        fuelSum += abs(int(values[j]) - i)
     if(fuelSum < lowest_fuel_cost):
         lowest_fuel_cost = fuelSum
         
