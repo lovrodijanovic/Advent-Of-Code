@@ -15,7 +15,6 @@ def floodFill(lowPointX, lowPointY):
     floodFill(lowPointX, lowPointY + 1)
     floodFill(lowPointX, lowPointY - 1)
     
-lines = []
 with open('test.txt') as f:
     lines = f.readlines()
 f.close()
@@ -27,8 +26,7 @@ lowPoints = []
 basins = []
 
 for i in range(0, len(lines)):
-    for j in range(0, len(lines[0])):
-        
+    for j in range(0, len(lines[0])):        
         if(i == 0 and j == 0):
             if(lines[i][j] < lines[i+1][j]):
                 if(lines[i][j] < lines[i][j+1]):
@@ -49,8 +47,7 @@ for i in range(0, len(lines)):
             if(lines[i][j] < lines[i-1][j]):
                 if(lines[i][j] < lines[i][j-1]):
                     lowPoints.append(lines[i][j])
-                    basins.append(floodFill(i,j))
-                    
+                    basins.append(floodFill(i,j))                    
         elif(i == 0):
             if(lines[i][j] < lines[i+1][j]):
                 if(lines[i][j] < lines[i][j+1]):

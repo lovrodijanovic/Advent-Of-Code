@@ -5,15 +5,11 @@ Created on Sun Dec 12 23:10:41 2021
 @author: Loc
 """
 
-lines = []
 with open('input.txt') as f:
     lines = f.readlines()
 f.close()
 
-
 winningNumbers = lines[0].split(",")
-
-
 lines = [x for x in lines if x != "\n"] 
 lines.remove(lines[0])
 
@@ -32,20 +28,14 @@ while(len(lines) > 0):
     boards.append(rows)
     rows = []
         
-
 turnCounter = []
 scores = []
-flag = 0
 for i in range(0, len(boards)):
     winningNumberCounter = 0
-    flag = 0
     for l in range(0,len(winningNumbers)):
-        if(flag == 1):
-            break
         for j in range(0,len(boards[i])):
-            if(flag == 1):
-                break
             for k in range(0, len(boards[i][j])):
+                winningNumberCounter += 1
                 if(boards[i][j][k] == winningNumbers[l]):
                     boards[i][j][k] = 'O'
                     winningNumberCounter += 1
@@ -62,10 +52,6 @@ for i in range(0, len(boards)):
                                     if(boards[i][m][n] != 'O'):
                                         unmarkedSum += int(boards[i][m][n])
                             scores.append(unmarkedSum*int(winningNumbers[l]))
-                            flag = 1
-                            break
-                    if(flag == 1):
-                        break;
                     for n in range(0,len(boards[i])):
                         countO = 0
                         for m in range(0, len(boards[i][j])):
@@ -78,11 +64,7 @@ for i in range(0, len(boards)):
                                 for m in range(0, len(boards[i][j])):
                                     if(boards[i][m][n] != 'O'):
                                         unmarkedSum += int(boards[i][m][n])
-                            scores.append(unmarkedSum*int(winningNumbers[l]))
-                            flag = 1
-                            break
-                    if(flag == 1):
-                        break;                            
+                            scores.append(unmarkedSum*int(winningNumbers[l]))                            
 
 low = turnCounter[0]
 for i in range(0, len(turnCounter)):

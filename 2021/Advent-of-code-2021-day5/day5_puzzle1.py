@@ -4,14 +4,11 @@ Created on Sat Dec 11 16:09:24 2021
 
 @author: Loc
 """
-
 import re
 
-lines = []
 with open('input.txt') as f:
     lines = f.readlines()
 f.close()
-
 
 x1 = []
 y1 = []

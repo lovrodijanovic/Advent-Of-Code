@@ -6,14 +6,12 @@ Created on Tue Dec 14 16:35:31 2021
 """
 days = 256
 
-initialStates = []
 with open('input.txt') as f:
     lines = f.readline()  
     initialStates = lines.split(",")
 f.close()
 
 initialStates = list(map(int, initialStates))
-
 allStates = [0] * 9
 
 #setting initial state
@@ -27,7 +25,6 @@ for i in range(0, 9):
     else:
         allStates[i] = counter        
 
-
 six = 0
 for i in range(0, days):
     for j in range(1, len(allStates)):       
@@ -40,5 +37,4 @@ for i in range(0, days):
 finalSum = 0        
 for i in range(0, len(allStates)):
     finalSum += allStates[i]
-
 print(finalSum)

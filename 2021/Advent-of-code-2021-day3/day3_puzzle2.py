@@ -1,8 +1,6 @@
 #finding oxygen_generator_rating
-lines = []
 with open('input.txt') as f:
     lines = f.readlines()
-    
 f.close()    
 
 for j in range(0,12):
@@ -12,8 +10,7 @@ for j in range(0,12):
         if(int(lines[i][j]) == 0):
             zeros += 1
         else:
-            ones += 1
-    
+            ones += 1    
     if(zeros > ones): 
         i = 0             
         while(i < len(lines)):
@@ -23,7 +20,6 @@ for j in range(0,12):
                   i = 0
             else:
                 i += 1
-
     else:
         i = 0             
         while(i < len(lines)):
@@ -33,14 +29,11 @@ for j in range(0,12):
                   i = 0
             else:
                 i += 1
-
 oxygen_generator_rating = int(lines[0],2)
 
 #finding CO2 scrubber rating
-lines = []
 with open('input.txt') as f:
-    lines = f.readlines()
-    
+    lines = f.readlines()    
 f.close()    
 
 for j in range(0,12):
@@ -61,7 +54,6 @@ for j in range(0,12):
                   i = 0
             else:
                 i += 1
-
     else:
         i = 0             
         while(i < len(lines)):

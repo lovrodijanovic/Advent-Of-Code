@@ -4,11 +4,8 @@ Created on Sat Dec 11 16:09:24 2021
 
 @author: Loc
 """
-
-
 import re
 
-lines = []
 with open('input.txt') as f:
     lines = f.readlines()
 f.close()
@@ -42,8 +39,7 @@ for i in range(0,len(lines)):
         else:
             y1[i],y2[i] = y2[i],y1[i]
             for j in range(y1[i], y2[i] + 1):
-                diagram[j][x1[i]] += 1
-    
+                diagram[j][x1[i]] += 1   
     else:
         if(x1[i] < x2[i] and y1[i] < y2[i]):
             j = x1[i]

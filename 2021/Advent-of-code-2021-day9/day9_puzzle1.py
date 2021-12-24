@@ -5,7 +5,6 @@ Created on Sat Dec 11 18:17:25 2021
 @author: Loc
 """
 
-lines = []
 with open('input.txt') as f:
     lines = f.readlines()
 f.close()
@@ -15,8 +14,7 @@ for i in range(0,len(lines)):
 
 lowPoints = []
 for i in range(0, len(lines)):
-    for j in range(0, len(lines[0])):
-        
+    for j in range(0, len(lines[0])):       
         if(i == 0 and j == 0):
             if(lines[i][j] < lines[i+1][j]):
                 if(lines[i][j] < lines[i][j+1]):
@@ -32,8 +30,7 @@ for i in range(0, len(lines)):
         elif(i == len(lines) - 1 and j == len(lines[i]) - 1):
             if(lines[i][j] < lines[i-1][j]):
                 if(lines[i][j] < lines[i][j-1]):
-                    lowPoints.append(lines[i][j])
-                    
+                    lowPoints.append(lines[i][j])                   
         elif(i == 0):
             if(lines[i][j] < lines[i+1][j]):
                 if(lines[i][j] < lines[i][j+1]):
@@ -61,10 +58,10 @@ for i in range(0, len(lines)):
                         if(lines[i][j] < lines[i][j+1]):
                             lowPoints.append(lines[i][j])
             
-sum = 0            
+sum = 0         
 for i in range(0,len(lowPoints)):
     sum += 1 + int(lowPoints[i]) 
-            
+print(sum)            
             
             
             
