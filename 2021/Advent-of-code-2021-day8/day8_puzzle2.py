@@ -21,8 +21,7 @@ for i in range(len(lines)):
 zero, one, two, three, four, five, six, seven, eight, nine= '', '', '', '', '', '', '', '', '' , '' 
 
 grandSum = 0
-for i in range(len(signalPatterns)):
-    
+for i in range(len(signalPatterns)):    
     #one,four,seven,eight
     for j in range(len(signalPatterns[i])):
         if(len(signalPatterns[i][j]) == 2):
