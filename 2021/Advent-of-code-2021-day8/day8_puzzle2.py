@@ -21,7 +21,8 @@ for i in range(len(lines)):
 zero, one, two, three, four, five, six, seven, eight, nine= '', '', '', '', '', '', '', '', '' , '' 
 
 grandSum = 0
-for i in range(len(signalPatterns)):    
+for i in range(len(signalPatterns)):   
+    
     #one,four,seven,eight
     for j in range(len(signalPatterns[i])):
         if(len(signalPatterns[i][j]) == 2):
@@ -85,7 +86,7 @@ for i in range(len(signalPatterns)):
         if(len(signalPatterns[i][j]) == 5 and signalPatterns[i][j] is not three and signalPatterns[i][j] is not two):
                 five = signalPatterns[i][j]
                                            
-    #assigning segments    
+ 
     zero_set = set(zero)
     one_set = set(one)
     two_set = set(two)
@@ -96,14 +97,6 @@ for i in range(len(signalPatterns)):
     seven_set = set(seven)
     eight_set = set(eight)
     nine_set = set(nine)
-    
-    up = " ".join(map(str,seven_set.difference(one_set)))
-    middle = " ".join(map(str,eight_set.difference(zero_set)))
-    upLeft = " ".join(map(str,nine_set.difference(three_set)))
-    downLeft = " ".join(map(str,six_set.difference(five_set)))
-    down = " ".join(map(str,nine_set.difference(four_set).difference(seven_set)))
-    upRight = " ".join(map(str,nine_set.difference(five_set)))
-    downRight = " ".join(map(str,six_set.difference(two_set).difference(upLeft)))
     
     singleResult = []
     allResults = []
@@ -151,6 +144,6 @@ for i in range(len(signalPatterns)):
         res = "".join(map(str,allResults[i]))
         sum += int(res)
     grandSum += sum
-
+print(grandSum)
 
 
