@@ -10,6 +10,14 @@ with open('input.txt') as file:
 file.close()
 
 words_to_numbers = {
+    'oneight': '18',
+    'twone': '21',
+    'threeight': '38',
+    'fiveight': '58',
+    'sevenine': '79',
+    'eightwo': '82',
+    'eighthree': '83',
+    'nineight': '98',
     'one': '1',
     'two': '2',
     'three': '3',
@@ -23,13 +31,9 @@ words_to_numbers = {
 
 result = 0
 
-for i in range(len(lines) - 1):
+for i in range(len(lines)):
     line = lines[i].strip()
-    minimum = 0
     for key in words_to_numbers:
-        print(line.find(key))
-        if(line.find(key) > minimum):
-            continue
         line = line.replace(key, words_to_numbers[key])
     string = filter(str.isdecimal, line)
     numbers = "".join(string)
@@ -37,3 +41,5 @@ for i in range(len(lines) - 1):
         result += int(2 * numbers)
     else:
         result += int(numbers[0] + numbers[len(numbers) - 1])
+        
+        
